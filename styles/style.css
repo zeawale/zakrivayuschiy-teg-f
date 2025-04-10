@@ -11,6 +11,33 @@
 */
 
 .page {
+  margin: 0 auto;
+  max-width: 700px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--font-family);
+  font-variation-settings: 'wght' var(--font-weight);
+
 }
+
+.header {
+  width: clamp(100vw, 16.285rem + 30.516vw, 700px);
+  font-family: 'PressStart2P';
+  border: 2px #000 solid;
+  padding: clamp(7.5rem, 7.324rem + 0.751vw, 8rem) 0;
+  text-align: center;
+}
+
+.header__title {
+  font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
+  margin-bottom: 20px;
+}
+
+.header__description {
+  font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
+  text-transform: uppercase;
+}
+
+
+
+
