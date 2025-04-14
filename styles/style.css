@@ -80,6 +80,39 @@
 
 .card__image-wrapper{
   position: relative;
+  height: min(100vw, 700px);
+}
+
+.img__new_year_tree {
+  filter: brightness(200%);
+}
+
+.img__tired_cat {
+  filter: grayscale(70%);
+}
+
+.img__cookies {
+  filter: contrast(140%);
+}
+
+.img__vibe {
+  filter: saturate(150%)
+}
+
+.img__love {
+  filter: sepia(50%);
+}
+
+.img__kursach {
+  filter: blur(2px)
+}
+
+.img__scared_cat {
+  filter: grayscale(70%);
+}
+
+.img__sunrise {
+  filter: contrast(120%) brightness(160%);
 }
 
 .label {
