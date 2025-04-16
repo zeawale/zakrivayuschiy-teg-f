@@ -4,6 +4,11 @@
     --font-family-accent: 'PressStart2P', sans-serif;
     --font-weight: 400;
     --title-font-weight: 700;
+    --main-color: #000;
+    --bg-color: #FFF;
+    --accent-color: #FFF;
+    --animation-fill-color: #FF0000;
+    --contour-color: #000;
     --bg-image: repeating-linear-gradient(
         to right, 
         #d3d3d3 0,
