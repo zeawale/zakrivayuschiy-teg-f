@@ -53,7 +53,7 @@
 
 .card__title {
   padding: 3px 10px 5px;
-  font-weight: 700;
+  font-variation-settings: "wqht" 700;
   font-size: 18px;
   
 }
@@ -78,7 +78,7 @@
   object-position: center;
 }
 
-.card__image-wrapper{
+.card__image-wrapper {
   position: relative;
   height: min(100vw, 700px);
 }
@@ -225,7 +225,6 @@
 .dialog__button {
   position: relative;
   display: flex;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -255,7 +254,7 @@
   transform-origin: left center;
 }
 
-.button:hover::after{
+.button:hover::after {
   inset: 0;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
