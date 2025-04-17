@@ -5,14 +5,14 @@
     font-family: 'Inter-Variable';
     src:
         local('Inter-Variable'),
-        url('../fonts/Inter-Variable.woff2') format('woff2 supports variations'),
-            url('../fonts/Inter-Variable.woff2') format('woff2-variations');
+        url('Inter-Variable.woff2') format('woff2 supports variations'),
+            url('Inter-Variable.woff2') format('woff2-variations');
         font-weight: 400 900;
 }
 
 @font-face {
     font-family: 'PressStart2P';
-    src: url('../fonts/PressStart2P-Regular.woff');
+    src: url('PressStart2P-Regular.woff');
     font-weight: normal;
 }
 

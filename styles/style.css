@@ -53,8 +53,8 @@
 
 .card__title {
   padding: 3px 10px 5px;
-  font-variation-settings: "wqht" 700;
   font-size: 18px;
+  font-variation-settings: "wqht" var(--font-variation-wght-card-title);
   
 }
 
@@ -67,6 +67,7 @@
 
 .card__description-text {
   line-height: 21px;
+  font-variation-settings: "wqht" var(--font-variation-wght-card-description);
 }
 
 .card__image {
@@ -83,35 +84,31 @@
   height: min(100vw, 700px);
 }
 
-.img__new_year_tree {
+.filter-brightness {
   filter: brightness(200%);
 }
 
-.img__tired_cat {
+.filter-grayscale {
   filter: grayscale(70%);
 }
 
-.img__cookies {
+.filter-contrast {
   filter: contrast(140%);
 }
 
-.img__vibe {
+.filter-saturate {
   filter: saturate(150%);
 }
 
-.img__love {
+.filter-sepia {
   filter: sepia(50%);
 }
 
-.img__kursach {
+.filter-blur {
   filter: blur(2px);
 }
 
-.img__scared_cat {
-  filter: grayscale(70%);
-}
-
-.img__sunrise {
+.filter-contrast-and-brightness {
   filter: contrast(120%) brightness(160%);
 }
 
@@ -162,17 +159,17 @@
 } 
 
 .save-button {
-  margin: 52px auto 100px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border: var(--main-color) 2px solid;
-  padding: 15px 20px;
   width: clamp(19.125rem, 18.487rem + 2.723vw, 20.938rem);
   max-height: 84px;
+  margin: 52px auto 100px;
+  border: var(--main-color) 2px solid;
+  padding: 15px 20px;
 }
 
 .button__text {
@@ -194,7 +191,7 @@
 }
 
 .floppy__dialog {
-  min-width: 39px;
+  max-width: 39px;
   min-height: 39px;
 }
 
@@ -202,7 +199,10 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 30px 42px;
+  width: clamp(341px, 90vw, 353px);
+  min-width: 341px;
+  border: 2px #000 solid;
+  padding: 30px 40px;
 }
 
 .dialog::backdrop {
@@ -229,9 +229,8 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  width: 100%;
   border: var(--main-color) 2px solid;
-  padding: 15px 18px;
+  padding: 9px 17px;
   background-color: transparent;
 }
 
@@ -242,7 +241,7 @@
 .button:focus-visible {
   box-shadow: 2px 2px var(--main-color);
   outline: none;
-  transition: box-shadow 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .button::after {
@@ -267,7 +266,7 @@
 
 .card__icon-button:focus-visible {
   border: 2px var(--main-color) solid;
-  transition: border 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .sparks {
@@ -344,6 +343,10 @@
   .floppy {
     min-width: 21px;
     height: 21px;
+  }
+
+  .dialog[open] {
+    padding: 30px;
   }
 }
 
