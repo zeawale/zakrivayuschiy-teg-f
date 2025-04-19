@@ -54,8 +54,7 @@
 .card__title {
   padding: 3px 10px 5px;
   font-size: 18px;
-  font-variation-settings: "wqht" var(--font-variation-wght-card-title);
-  
+  font-variation-settings: "wght" var(--font-variation-wght-card-title);
 }
 
 .card__description {
@@ -67,7 +66,7 @@
 
 .card__description-text {
   line-height: 21px;
-  font-variation-settings: "wqht" var(--font-variation-wght-card-description);
+  font-variation-settings: "wght" var(--font-variation-wght-card-description);
 }
 
 .card__image {
@@ -131,7 +130,6 @@
   display: flex;
   justify-self: end;
   gap: 4px;
-  max-height: 38px;
   margin: 0 25px 25px 0;
 }
 
@@ -141,17 +139,17 @@
   border: 2px var(--main-color) solid;
   padding: 9px 17px;
   background-color: transparent;
-
 }
 
 .card__icon-button {
   border: 2px transparent solid;
   padding: 0;
   background-color: transparent;
+  transition: border 0.3s ease;
 }
 
 @supports((text-stroke: 1px var(--accent-color)) or (-webkit-text-stroke: 1px var(--main-color)000)) {
-  label {
+  .label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--accent-color);
     text-stroke: 1px var(--accent-color);
@@ -234,6 +232,10 @@
   background-color: transparent;
 }
 
+.button {
+  transition: box-shadow 0.3s ease;
+}
+
 .button:focus {
   outline: none;
 }
@@ -241,22 +243,20 @@
 .button:focus-visible {
   box-shadow: 2px 2px var(--main-color);
   outline: none;
-  transition: 0.3s ease;
 }
 
 .button::after {
   content: "";
   position: absolute;
+  inset: 0;
   z-index: 0;
   background-color: var(--main-color);
   transform: scaleX(0);
   transform-origin: left center;
+  transition: transform 0.5s ease-in-out;
 }
 
 .button:hover::after {
-  inset: 0;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
   transform: scaleX(1);
 }
 
@@ -266,7 +266,6 @@
 
 .card__icon-button:focus-visible {
   border: 2px var(--main-color) solid;
-  transition: 0.3s ease;
 }
 
 .sparks {
